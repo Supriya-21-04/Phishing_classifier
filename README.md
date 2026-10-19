@@ -1,4 +1,3 @@
-```markdown
 ## Phishing Email Detection using NLP 🛡️
 
 This project detects phishing emails using Natural Language Processing (NLP) and a machine learning model. It includes a Flask application, a Chrome extension, and Gmail inbox scanning via IMAP.
@@ -14,15 +13,11 @@ This project detects phishing emails using Natural Language Processing (NLP) and
 
 ### 1. Install Dependencies
 
-```bash
-pip install -r requirements.txt
-```
+Run `pip install -r requirements.txt`
 
 ### 2. Train the Model
 
-```bash
-python3 spamming.py
-```
+Run `python3 spamming.py`
 
 This trains an `XGBClassifier` using TF-IDF text features and custom text features, then saves the model assets in the `model/` directory. After training, the script starts an interactive command-line classifier; type `exit` to quit.
 
@@ -30,9 +25,7 @@ This trains an `XGBClassifier` using TF-IDF text features and custom text featur
 
 ### 3. Run the Flask Application
 
-```bash
-python3 app.py
-```
+Run `python3 app.py`
 
 By default, the application runs at `http://127.0.0.1:5000/`.
 
@@ -48,5 +41,4 @@ The extension fetches email through the application; it does not read the email 
 
 ## 🔒 Gmail Access Note
 
-Gmail inbox scanning uses IMAP and requires a Gmail app password. The current `app.py` contains a hard-coded credential: if it is or was valid, revoke or rotate it. Do not publish credentials; remove them from the source and repository history and store them securely instead.
-```
+Gmail inbox scanning uses IMAP and requires a Gmail app password. The current `app.py` contains a hard-coded credential. If it is or was valid, revoke or rotate it. Do not publish credentials; remove them from the source and repository history, and store them securely instead.
