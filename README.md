@@ -39,6 +39,3 @@ By default, the application runs at `http://127.0.0.1:5000/`.
 
 The extension fetches email through the application; it does not read the email currently open in a browser tab.
 
-## 🔒 Gmail Access Note
-
-Gmail inbox scanning uses IMAP and requires a Gmail app password. The current `app.py` contains a hard-coded credential. If it is or was valid, revoke or rotate it. Do not publish credentials; remove them from the source and repository history, and store them securely instead.
